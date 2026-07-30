@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dh-headunit-image-builder"
+dynamic = ["version"]
+description = "Build a 120 GB SSD image for Genesis G80 DH 9.2-inch head units from an owner-supplied navigation update"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+classifiers = []
+
+[project.scripts]
+image-builder = "image_builder.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "image_builder.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["image_builder*"]
+
+[tool.setuptools.package-data]
+image_builder = [
+  "resources/*.c",
+  "resources/*_skeleton.json",
+]

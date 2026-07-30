@@ -1,0 +1,10 @@
+{
+  "schema": "genesis-p10-skeleton/v1",
+  "directories": [
+    {"path": "/media", "mode": "0777", "uid": 500, "gid": 500},
+    {"path": "/media/Picture", "mode": "0777", "uid": 500, "gid": 500},
+    {"path": "/media/Music", "mode": "0755", "uid": 500, "gid": 500},
+    {"path": "/media/Video", "mode": "0755", "uid": 500, "gid": 500}
+  ],
+  "symlinks": []
+}

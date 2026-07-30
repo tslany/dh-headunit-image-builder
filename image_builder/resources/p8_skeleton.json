@@ -1,0 +1,10 @@
+{
+  "schema": "genesis-p8-skeleton/v1",
+  "directories": [
+    {"path": "/gps", "mode": "0755", "uid": 500, "gid": 500},
+    {"path": "/capture", "mode": "0755", "uid": 500, "gid": 500},
+    {"path": "/log", "mode": "0755", "uid": 500, "gid": 500},
+    {"path": "/backup", "mode": "0755", "uid": 500, "gid": 500}
+  ],
+  "symlinks": []
+}

@@ -1,0 +1,62 @@
+from __future__ import annotations
+
+from typing import Final
+
+INPUT_ROLES: Final = ("boot", "root", "vr")
+
+RESTORED_FILESYSTEM_SPECS: Final = {
+    "boot": {
+        "format": "ext3",
+        "bytes": 213_852_160,
+        "inode_count": 52_416,
+        "block_count": 208_840,
+        "block_size": 1_024,
+        "blocks_per_group": 8_192,
+        "inodes_per_group": 2_016,
+        "inode_size": 128,
+        "uuid": "c15a66f0-f9d6-4617-a12f-7dd9345b776e",
+        "feature_compat": 0x3C,
+        "feature_incompat": 0x02,
+        "feature_ro_compat": 0x01,
+        "journal_bytes": 4 * 1_024 * 1_024,
+        "default_mount_options": 0,
+        "min_extra_isize": 0,
+        "want_extra_isize": 0,
+    },
+    "root": {
+        "format": "ext4",
+        "bytes": 3_224_305_664,
+        "inode_count": 196_800,
+        "block_count": 787_184,
+        "block_size": 4_096,
+        "blocks_per_group": 32_768,
+        "inodes_per_group": 7_872,
+        "inode_size": 256,
+        "uuid": "863d6b8a-05fe-4290-ba40-c8ae4b9a82de",
+        "feature_compat": 0x3C,
+        "feature_incompat": 0x242,
+        "feature_ro_compat": 0x7B,
+        "journal_bytes": 64 * 1_024 * 1_024,
+        "default_mount_options": 0,
+        "min_extra_isize": 28,
+        "want_extra_isize": 28,
+    },
+    "vr": {
+        "format": "ext4",
+        "bytes": 4_301_819_904,
+        "inode_count": 262_944,
+        "block_count": 1_050_249,
+        "block_size": 4_096,
+        "blocks_per_group": 32_768,
+        "inodes_per_group": 7_968,
+        "inode_size": 256,
+        "uuid": "2cc1b289-1128-4039-9a86-02572180c6db",
+        "feature_compat": 0x3C,
+        "feature_incompat": 0x242,
+        "feature_ro_compat": 0x7B,
+        "journal_bytes": 128 * 1_024 * 1_024,
+        "default_mount_options": 0,
+        "min_extra_isize": 28,
+        "want_extra_isize": 28,
+    },
+}
